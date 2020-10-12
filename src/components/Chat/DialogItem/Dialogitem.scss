@@ -1,0 +1,92 @@
+.chat__persons {
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+
+    display: flex;
+    padding: 12px 16px;
+    transition: 0.2s;
+    cursor: pointer;
+    &:hover {
+        background-color: #323271;
+        .chat__delete-dialog--cross {
+            width: 20px;
+            height: 20px;
+            display: flex;
+        }
+    }
+}
+
+.chat__ava-block {
+    min-width: 15%;
+}
+.chat__ava-person {
+    width: 50px;
+    height: 50px;
+    border-radius: 35px;
+}
+.chat__info-person {
+    margin-left: 10px;
+    width: 80%;
+}
+
+.chat__name-person {
+    color: #ddd;
+    font-weight: 700;
+    font-size: 15px;
+}
+.chat__row {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.chat__row:not(:first-child) {
+    margin-top: 5px;
+    padding: 4px 0 ;
+}
+.chat__status-person {
+    
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.5);
+}
+.chat__last-message {
+    max-width: 220px;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.5);
+    white-space: nowrap;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+}
+.count__message {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;   
+    min-width: 15px;
+    height: 15px;
+    font-size: 13px;
+    background: #5386df;
+    border-radius: 50%;
+    color:#dbdbdb;
+}
+.chat__status-person--online {
+    color: #5386df ;
+}
+.chat__persons--current {
+    background-color: #323271;
+}
+.chat__delete-dialog {
+    width: 10px;
+    height: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.chat__delete-dialog--cross {
+    display: none;
+    color: #dcdce9;
+    &:hover {
+        color: #9961ae;
+
+    }
+}
+

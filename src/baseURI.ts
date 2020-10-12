@@ -1,0 +1,1 @@
+export const BaseUPI = 'http://localhost:5000/'

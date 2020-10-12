@@ -1,0 +1,29 @@
+// import camera from '../../../static/InputMessage/camera.svg'
+// import emoticon from '../../../static/InputMessage/emoticon.svg'
+// import mic from '../../../static/InputMessage/mic.svg'
+// import send from '../../../static/InputMessage/send.svg'
+.chat__icon {
+    margin-left: 15px;
+    width: 25px;
+    height: 25px;
+}
+
+.chat__icons-wrapper {
+    display: flex;
+    align-items: center;
+    border-left: 1px solid #dbdbdb;
+}
+.chat__send {
+    
+    background: url('../../../static/InputMessage/send.svg');
+}
+.chat__voice {
+
+    background: url('../../../static/InputMessage/mic.svg');
+}
+.chat__smile {
+    background: url('../../../static/InputMessage/emoticon.svg');
+}
+.chat__photos {
+    background: url('../../../static/InputMessage/camera.svg');
+}
